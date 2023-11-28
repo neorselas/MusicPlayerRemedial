@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+.container {
+    display: flex;
+    align-items:start;
+    /* justify-content:start; */
+    /* width: 100%; */
+    min-height: 100vh;
+    background-image: url(https://img.freepik.com/free-vector/gradient-wavy-dynamic-background_23-2149121885.jpg);
+    transition: background-color .5s;
+    background-size: cover;
+    
+  }
+  
+  
+  .player {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(209, 212, 215);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 80px;
+  }
+  
+  .details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+ }
+  
+  .track-art {
+    margin: 25px;
+    height: 200px;
+    width: 300px;
+    background-image: url("https://site-images.similarcdn.com/url?url=https%3A%2F%2Fplay-lh.googleusercontent.com%2FIkBgEGyYIAaYLzNG8VLOJ_ntUkk-we9ErksMUCmI5kBuCVy6GdjowH9K0nLSvHVYegY%3Ds180&h=f9e210c381cb1d60137f885f6c8c406b6f88ea73c26cf2a8e14dfc3097880963");
+    background-size:cover;
+    border-radius: 10%;
+  }
+    
+  .track-name {
+    font-size: 1.5rem;
+  }
+  
+  .track-artist {
+    font-size: 1rem;
+  }
+
+
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(98, 19, 75);
+  }
+  
+  
+  .playpause-track, .prev-track, .next-track {
+    padding: 25px;
+    opacity: 0.8;
+  
+    /* Smoothly transition the opacity */
+    transition: opacity .2s;
+  }
+  
+  .playpause-track:hover, .prev-track:hover, .next-track:hover {
+    opacity: 1.0;
+  }
+  
+  .slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Modify the appearance of the slider */
+  .seek_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: rgb(255, 255, 255);
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  /* Modify the appearance of the slider thumb */
+  .seek_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 3px solid rgb(98, 19, 75);
+    border-radius: 50%;
+  }
+  
+  .seek_slider:hover{
+    opacity: 1.0;
+  }
+  
+  .seek_slider {
+    width: 60%;
+    background: rgb(98, 19, 75);
+  }
+  
+  
+  .current-time, .total-duration {
+    padding: 10px;
+  }
+  
+  
+  i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+    cursor: pointer;
+    
+  }
+
+  .description{
+    margin-top: 80px;
+  }
+
+  .description h1{
+    color: rgb(255, 255, 255);
+  }
+
+  .api{
+    display: flex;
+    color: white;
+    
+  }
+
+  .api h3{
+    margin: 30px 50px 0 0;
+  }
